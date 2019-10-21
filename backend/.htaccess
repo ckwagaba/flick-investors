@@ -1,0 +1,9 @@
+Options -Indexes
+
+RewriteEngine On
+
+## general endpoints
+RewriteRule ^collectpayment$ ./collect.php [NC,L]
+
+## error handling
+ErrorDocument 404 https://flickinvestors.com
